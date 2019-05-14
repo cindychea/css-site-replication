@@ -6,5 +6,105 @@ light blue: #1c5380
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  margin: 5em auto;
+  height: 70%;
+  width: 80%;
 }
+.bluetop {
+  background-color: #50789B;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 45%;
+  width: 100%;
+  z-index: -111;
+}
+.whitebottom {
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 55%;
+  width: 100%;
+  z-index: -111;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em 7em;
+}
+.topimages {
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#ig {
+  flex: 1 1 100%;
+}
+.house {
+  width: 20px;
+  margin-right: 7px;
+}
+#login {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -5px;
+  flex: 0 0 auto;
+  font-weight: 700;
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  font-size: 13px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: lightgray;
+  border-radius: 2px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+1,50789b+75 */
+  background: #7db9e8; /* Old browsers */
+  background: -moz-linear-gradient(top,  #7db9e8 1%, #50789b 75%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #7db9e8 1%,#50789b 75%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #7db9e8 1%,#50789b 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#50789b',GradientType=0 ); /* IE6-9 */
+}
+h2 {
+  color: #06365f;
+  display: inline;
+}
+.boxcontent {
+  display: flex;
+  justify-content: center;
+  margin-right: 3em;
+}
+#middle {
+  grid-row: 2 / 3;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 1em;
+  font-weight: 400;
+}
+ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+  font-weight: 500;
+}
+ul li a {
+  text-decoration: none;
+  color: #06365f;
+}
+.copy {
+  color: lightgrey;
+  font-weight: 500;
+}
+footer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
